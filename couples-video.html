@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Reignite the Spark &mdash; a free teaching for couples | Maura Grace</title>
+<meta name="description" content="Twelve minutes with Maura Grace on what brings the fire back between two people who love each other. Sent straight to your phone.">
+<meta property="og:title" content="Reignite the Spark &mdash; a free teaching for couples">
+<meta property="og:description" content="Twelve minutes with Maura Grace, sent straight to your phone.">
+<meta property="og:image" content="assets/img/rose-connect.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@font-face{
+  font-family:"TAN Pearl";
+  src:url("assets/fonts/TAN-PEARL.woff2") format("woff2"),
+      url("assets/fonts/TAN-PEARL.woff") format("woff");
+  font-weight:400; font-style:normal; font-display:swap;
+}
+
+:root{
+  --red-950:#2a060b;
+  --red-900:#4a0d15;
+  --red-800:#7a1a26;
+  --red-600:#a02737;
+  --rose:#e8a396;
+  --blush:#fbe3dc;
+  --cream:#faf3ec;
+  --gold:#c9a35e;
+  --gold-soft:#e3c98f;
+  --font-display:"TAN Pearl","Cormorant Garamond",serif;
+  --font-body:"PT Serif",Georgia,serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-body);
+  background:var(--red-950);
+  color:var(--blush);
+  line-height:1.65;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+
+/* ---------- The rose atmosphere ---------- */
+.veil{
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(120% 70% at 50% 0%, rgba(42,6,11,.12) 0%, rgba(42,6,11,.74) 46%, rgba(42,6,11,.97) 78%, #2a060b 100%),
+    url("assets/img/rose-connect.jpg") center 6% / cover no-repeat;
+}
+.veil::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(to bottom, rgba(42,6,11,0) 28%, rgba(42,6,11,.86) 60%, #2a060b 86%);
+}
+
+.page{position:relative; z-index:1; max-width:600px; margin:0 auto; padding:2.4rem 1.5rem 3.5rem;}
+
+/* ---------- Portrait in its gold halo ---------- */
+.portrait{position:relative; width:164px; height:164px; margin:0 auto 1.5rem;}
+.portrait .halo{
+  position:absolute; inset:-14px; border-radius:50%;
+  background:radial-gradient(circle at 50% 45%, rgba(227,201,143,.30) 0%, rgba(227,201,143,.06) 58%, rgba(227,201,143,0) 72%);
+  filter:blur(2px);
+}
+.portrait .ring{
+  position:absolute; inset:0; border-radius:50%;
+  border:1px solid rgba(227,201,143,.75);
+  box-shadow:0 0 0 7px rgba(42,6,11,.55), 0 18px 44px rgba(0,0,0,.55);
+}
+.portrait .frame{
+  position:absolute; inset:0; border-radius:50%; overflow:hidden;
+  background:linear-gradient(160deg,#5c1119,#2a060b);
+}
+.portrait .frame img{width:100%; height:100%; object-fit:cover; object-position:50% 8%;}
+
+/* ---------- Type ---------- */
+.eyebrow{
+  text-align:center; font-size:.75rem; letter-spacing:.30em; text-transform:uppercase;
+  color:var(--gold-soft); margin-bottom:.85rem;
+}
+h1{
+  font-family:var(--font-display); font-weight:400;
+  font-size:clamp(2.5rem,11.5vw,3.6rem); line-height:1.06;
+  text-align:center; color:var(--cream);
+  letter-spacing:.015em;
+  text-shadow:0 2px 26px rgba(0,0,0,.5);
+}
+.rule{
+  width:70px; height:1px; margin:1.15rem auto 1.1rem;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.promise{
+  text-align:center; font-size:1.06rem; color:var(--blush);
+  max-width:29rem; margin:0 auto; opacity:.94;
+}
+.promise em{font-style:italic; color:var(--gold-soft)}
+.invite{
+  text-align:center; margin-top:1.5rem; font-size:1.02rem; color:var(--cream);
+  font-style:italic; opacity:.95;
+}
+
+/* ---------- The card ---------- */
+form{
+  margin-top:1.7rem;
+  background:linear-gradient(165deg, rgba(250,243,236,.075), rgba(250,243,236,.028));
+  border:1px solid rgba(227,201,143,.28);
+  border-radius:26px;
+  padding:1.7rem 1.35rem 1.5rem;
+  backdrop-filter:blur(9px); -webkit-backdrop-filter:blur(9px);
+  box-shadow:0 24px 60px rgba(0,0,0,.45);
+}
+.row{display:grid; grid-template-columns:1fr 1fr; gap:.8rem}
+.field{margin-bottom:.8rem}
+label{
+  display:block; font-size:.72rem; letter-spacing:.17em; text-transform:uppercase;
+  color:var(--gold-soft); margin-bottom:.4rem;
+}
+label .opt{text-transform:none; letter-spacing:0; opacity:.6; font-size:.72rem}
+input[type=text],input[type=email],input[type=tel]{
+  width:100%; font-family:var(--font-body); font-size:1.05rem;
+  color:var(--cream); background:rgba(42,6,11,.42);
+  border:1px solid rgba(227,201,143,.34); border-radius:13px;
+  padding:.82rem .9rem; outline:none;
+  transition:border-color .2s, box-shadow .2s, background .2s;
+}
+input::placeholder{color:rgba(251,227,220,.34)}
+input:focus{
+  border-color:var(--gold-soft); background:rgba(42,6,11,.62);
+  box-shadow:0 0 0 3px rgba(201,163,94,.16);
+}
+
+.consent{
+  display:flex; gap:.65rem; align-items:flex-start;
+  margin:.95rem 0 .2rem; font-size:.79rem; line-height:1.5; opacity:.88;
+}
+.consent input{
+  appearance:none; -webkit-appearance:none;
+  flex:0 0 auto; width:19px; height:19px; margin-top:.15rem;
+  border:1px solid rgba(227,201,143,.55); border-radius:5px;
+  background:rgba(42,6,11,.5); cursor:pointer; position:relative;
+}
+.consent input:checked{background:var(--gold); border-color:var(--gold)}
+.consent input:checked::after{
+  content:""; position:absolute; left:6px; top:2px;
+  width:5px; height:10px; border:solid var(--red-950);
+  border-width:0 2px 2px 0; transform:rotate(43deg);
+}
+.consent label{
+  text-transform:none; letter-spacing:0; font-size:.79rem;
+  color:var(--blush); margin:0; cursor:pointer;
+}
+.consent label b{color:var(--cream); font-weight:700}
+
+button{
+  width:100%; margin-top:1.2rem;
+  font-family:var(--font-display); font-size:1.2rem; letter-spacing:.05em;
+  color:#2a060b;
+  background:linear-gradient(160deg,var(--gold-soft),var(--gold) 55%,#b08a45);
+  border:none; border-radius:999px; padding:.98rem 1rem;
+  cursor:pointer; box-shadow:0 12px 30px rgba(0,0,0,.4);
+  transition:transform .15s, box-shadow .2s, opacity .2s;
+}
+button:hover{transform:translateY(-1px); box-shadow:0 16px 38px rgba(0,0,0,.5)}
+button:active{transform:translateY(0)}
+button[disabled]{opacity:.6; cursor:default; transform:none}
+
+.fineprint{
+  text-align:center; font-size:.71rem; line-height:1.55;
+  color:rgba(251,227,220,.5); margin-top:.95rem;
+}
+.legal{
+  text-align:center; font-size:.71rem; margin-top:.7rem;
+  color:rgba(251,227,220,.55); letter-spacing:.04em;
+}
+.legal a{color:rgba(227,201,143,.85); text-decoration:none; border-bottom:1px solid rgba(227,201,143,.3)}
+.legal span{opacity:.4; padding:0 .45rem}
+.err{
+  display:none; margin-top:.85rem; font-size:.84rem; text-align:center;
+  color:#ffc9c0; background:rgba(160,39,55,.35);
+  border:1px solid rgba(232,163,150,.4); border-radius:12px; padding:.6rem .8rem;
+}
+.err.show{display:block}
+
+/* ---------- What's inside ---------- */
+.inside{margin-top:2.2rem; text-align:center}
+.inside h2{
+  font-family:var(--font-display); font-weight:400; font-size:1.5rem;
+  color:var(--gold-soft); letter-spacing:.02em;
+}
+.inside ul{list-style:none; margin-top:1rem; display:grid; gap:.75rem}
+.inside li{
+  font-size:.98rem; color:var(--blush); opacity:.92;
+  border-top:1px solid rgba(227,201,143,.16); padding-top:.75rem;
+}
+.inside li:first-child{border-top:none; padding-top:0}
+.signature{
+  font-family:var(--font-display); font-size:1.35rem; color:var(--gold-soft);
+  text-align:center; margin-top:2rem;
+}
+
+/* ---------- Thank you ---------- */
+#thanks{display:none; text-align:center; padding-top:.5rem}
+#thanks.show{display:block; animation:rise .8s ease both}
+@keyframes rise{from{opacity:0; transform:translateY(14px)} to{opacity:1; transform:none}}
+#thanks h2{
+  font-family:var(--font-display); font-weight:400;
+  font-size:clamp(2.2rem,10vw,3rem); color:var(--cream); line-height:1.1;
+}
+#thanks p{margin-top:1rem; font-size:1.04rem; color:var(--blush); opacity:.92}
+#thanks .sig{font-family:var(--font-display); font-size:1.5rem; color:var(--gold-soft); margin-top:1.6rem}
+.linkout{
+  display:inline-block; margin-top:1.7rem; font-size:.82rem;
+  letter-spacing:.17em; text-transform:uppercase; color:var(--gold-soft);
+  text-decoration:none; border-bottom:1px solid rgba(227,201,143,.4); padding-bottom:.25rem;
+}
+
+/* ---------- Falling petals ---------- */
+.petal{
+  position:fixed; top:-8vh; z-index:2; pointer-events:none;
+  width:26px; opacity:0; will-change:transform;
+  animation:fall linear forwards;
+}
+@keyframes fall{
+  0%{opacity:0; transform:translateY(0) rotate(0deg)}
+  12%{opacity:.75}
+  100%{opacity:0; transform:translateY(112vh) translateX(var(--dx)) rotate(var(--rot))}
+}
+@media (prefers-reduced-motion:reduce){
+  .petal{display:none}
+  #thanks.show{animation:none}
+}
+</style>
+</head>
+<body>
+
+<div class="veil" aria-hidden="true"></div>
+
+<main class="page">
+
+  <div id="card">
+    <div class="portrait">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="frame"><img src="assets/img/couples-circle.jpg" alt="Maura Grace"></div>
+      <div class="ring" aria-hidden="true"></div>
+    </div>
+
+    <p class="eyebrow">A free teaching for couples</p>
+    <h1>Reignite the Spark</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="promise">Twelve minutes with Maura Grace on what actually brings the fire back between two people who still love each other. <em>Not date nights. Not talking about it more.</em></p>
+
+    <p class="invite">Enter your details below and I'll send it straight to your phone.</p>
+
+    <form id="f" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="fn">First name</label>
+          <input id="fn" name="fn" type="text" autocomplete="given-name" placeholder="First" required>
+        </div>
+        <div class="field">
+          <label for="ln">Last name <span class="opt">(optional)</span></label>
+          <input id="ln" name="ln" type="text" autocomplete="family-name" placeholder="Last">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="ph">Phone</label>
+        <input id="ph" name="ph" type="tel" autocomplete="tel" inputmode="tel" placeholder="(555) 555-5555" required>
+      </div>
+
+      <div class="field">
+        <label for="em">Email</label>
+        <input id="em" name="em" type="email" autocomplete="email" inputmode="email" placeholder="you@email.com" required>
+      </div>
+
+      <div class="consent">
+        <input id="sms" type="checkbox">
+        <label for="sms">I agree to receive text messages from <b>Maura Grace Wisdom</b>, including this teaching and the ones that follow. Message and data rates may apply. Reply STOP to cancel.</label>
+      </div>
+
+      <button type="submit" id="go">Send Me The Teaching</button>
+      <div class="err" id="err"></div>
+
+      <p class="fineprint">Your number stays with Maura. It is never sold, never shared, and you can leave with one word at any time.</p>
+      <p class="legal"><a href="privacy.html">Privacy Policy</a><span>|</span><a href="sms-terms.html">Text Message Terms</a></p>
+    </form>
+
+    <section class="inside">
+      <h2>What's inside the twelve minutes</h2>
+      <ul>
+        <li>Why the spark fades even between people who are deeply in love, and what it is actually asking for</li>
+        <li>The one thing a man can do tonight that changes how safe his woman feels in her body</li>
+        <li>The one thing a woman can stop doing that lets desire come back on its own</li>
+      </ul>
+      <p class="signature">&mdash; Maura</p>
+    </section>
+  </div>
+
+  <section id="thanks" aria-live="polite">
+    <div class="portrait">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="frame"><img src="assets/img/couples-circle.jpg" alt="Maura Grace"></div>
+      <div class="ring" aria-hidden="true"></div>
+    </div>
+    <h2>It's on its way.</h2>
+    <p>Check your phone. The teaching is landing there now.</p>
+    <p>Watch it together if you can. It works best that way.</p>
+    <p class="sig">&mdash; Maura</p>
+    <a class="linkout" href="index.html">mauragracewisdom.com</a>
+  </section>
+
+</main>
+
+<script>
+(function(){
+  var COMPANY_ID = "TjQxkT";
+  var LIST_ID    = "Rpg7CL";          /* Couples Free Video */
+  var REVISION   = "2025-04-15";
+  var OFFER      = "couples-free-video";
+
+  var params = new URLSearchParams(location.search);
+  var source = (params.get("src") || params.get("utm_source") || "direct").slice(0,60);
+
+  var form   = document.getElementById("f");
+  var card   = document.getElementById("card");
+  var thanks = document.getElementById("thanks");
+  var btn    = document.getElementById("go");
+  var errBox = document.getElementById("err");
+
+  function fail(msg){
+    errBox.textContent = msg; errBox.classList.add("show");
+    btn.disabled = false; btn.textContent = "Send Me The Teaching";
+  }
+
+  /* US-friendly E.164. Returns null when we cannot be certain. */
+  function toE164(raw){
+    if(!raw) return null;
+    var d = raw.replace(/[^\d+]/g,"");
+    if(d.charAt(0) === "+") return d.length >= 11 ? d : null;
+    d = d.replace(/\D/g,"");
+    if(d.length === 10) return "+1" + d;
+    if(d.length === 11 && d.charAt(0) === "1") return "+" + d;
+    return null;
+  }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    errBox.classList.remove("show");
+
+    var first = document.getElementById("fn").value.trim();
+    var last  = document.getElementById("ln").value.trim();
+    var email = document.getElementById("em").value.trim();
+    var rawPh = document.getElementById("ph").value.trim();
+    var phone = toE164(rawPh);
+    var wantsSms = document.getElementById("sms").checked;
+
+    if(!first){ return fail("Please add your first name."); }
+    if(!phone){ return fail("Please add a mobile number we can text the video to."); }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){ return fail("That email doesn't look quite right."); }
+    if(!wantsSms){ return fail("Please tick the box so I'm allowed to text you the video."); }
+
+    btn.disabled = true;
+    btn.textContent = "One moment…";
+
+    var attrs = {
+      email: email,
+      phone_number: phone,
+      first_name: first,
+      properties: {
+        offer: OFFER,
+        opted_in_on: new Date().toISOString().slice(0,10),
+        capture_source: "couples-video-page",
+        traffic_source: source,
+        phone_raw: rawPh
+      },
+      subscriptions: {
+        email: { marketing: { consent: "SUBSCRIBED" } },
+        sms:   { marketing: { consent: "SUBSCRIBED" } }
+      }
+    };
+    if(last) attrs.last_name = last;
+
+    var payload = {
+      data: {
+        type: "subscription",
+        attributes: {
+          custom_source: "Couples free video page — " + source,
+          profile: { data: { type: "profile", attributes: attrs } }
+        },
+        relationships: { list: { data: { type: "list", id: LIST_ID } } }
+      }
+    };
+
+    fetch("https://a.klaviyo.com/client/subscriptions/?company_id=" + COMPANY_ID, {
+      method: "POST",
+      headers: { "content-type": "application/json", "revision": REVISION },
+      body: JSON.stringify(payload)
+    })
+    .then(function(r){
+      if(r.status === 202 || r.ok){ done(); return; }
+      return r.text().then(function(t){ throw new Error(t || ("HTTP " + r.status)); });
+    })
+    .catch(function(){
+      fail("That didn't go through. Check the number and email, then try once more.");
+    });
+  });
+
+  function done(){
+    card.style.display = "none";
+    thanks.classList.add("show");
+    petalRain();
+    window.scrollTo(0,0);
+  }
+
+  /* Rose petals, only on the thank-you */
+  function petalRain(){
+    if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var srcs = ["assets/img/petal1.png","assets/img/petal2.png","assets/img/petal3.png"];
+    for(var i=0;i<18;i++){
+      (function(n){
+        setTimeout(function(){
+          var p = document.createElement("img");
+          p.className = "petal";
+          p.src = srcs[n % srcs.length];
+          p.alt = "";
+          p.style.left = (Math.random()*100) + "vw";
+          p.style.width = (18 + Math.random()*22) + "px";
+          p.style.setProperty("--dx", ((Math.random()*160)-80) + "px");
+          p.style.setProperty("--rot", (200 + Math.random()*420) + "deg");
+          p.style.animationDuration = (5.5 + Math.random()*4.5) + "s";
+          document.body.appendChild(p);
+          setTimeout(function(){ p.remove(); }, 11000);
+        }, n * 260);
+      })(i);
+    }
+  }
+})();
+</script>
+</body>
+</html>
